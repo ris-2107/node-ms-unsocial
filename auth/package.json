@@ -35,7 +35,8 @@
     "ts-jest": "^29.1.0",
     "typescript": "^5.0.4"
   },
-  "lint-staged": {
+  
+  "lint-staged": { 
     "*.{ts,tsx}": [
       "eslint ."," prettier --write","git add"
     ]
