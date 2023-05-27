@@ -46,7 +46,6 @@
     "src/**/*.ts": [
       "npm run prettier:fix",
       "npm run test"
-      
     ]
   },
   "husky": {
