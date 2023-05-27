@@ -10,7 +10,7 @@
     "start": "",
     "lint": "eslint .",
     "lint:fix": "eslint --fix /src/**/*.ts",
-    "test": "jest ",
+    "test": "jest",
     "test:watch": "jest --watchAll --no-cache"
   },
   "jest": {
