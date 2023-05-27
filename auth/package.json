@@ -10,7 +10,8 @@
     "start": "",
     "lint": "eslint .",
     "lint:fix": "eslint --fix /src/**/*.ts",
-    "test": "jest --watchAll --no-cache"
+    "test": "jest ",
+    "test:watch": "jest --watchAll --no-cache"
   },
   "jest": {
     "testEnvironment": "node",
@@ -44,7 +45,8 @@
   "lint-staged": {
     "src/**/*.ts": [
       "npm run prettier:fix",
-      "git add"
+      "git add",
+      "npm run test"
     ]
   },
   "husky": {
