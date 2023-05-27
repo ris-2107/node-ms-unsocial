@@ -9,7 +9,7 @@
     "prettier:fix": "prettier --write  ./src/**/*.ts",
     "start": "",
     "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint --fix src/**/*.ts",
+    "lint:fix": "eslint --fix /src/**/*.ts",
     "test": "jest"
   },
   "jest":{
@@ -44,7 +44,6 @@
   "lint-staged": {
     "src/**/*.ts": [
       "npm run prettier:fix",
-      "npm run lint:fix",
       "git add"
     ]
   },
