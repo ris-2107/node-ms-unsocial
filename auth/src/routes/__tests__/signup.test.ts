@@ -19,6 +19,5 @@ import app from '../../app';
 
 it('should return 422 if email is invalid ', async () => {
   await request(app).post('/api/auth/signup').send({}).expect(422);
-
   await request(app).post('/api/auth/signup').send({ email: '@test@gmail.com' }).expect(422);
 });
