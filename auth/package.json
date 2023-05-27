@@ -6,15 +6,15 @@
   "scripts": {
     "start:dev": "nodemon src/index.ts",
     "prettier": "prettier --check  ./src/**/*.ts",
-    "prettier:fix": "prettier --write  ./src/**/*.ts",
+    "prettier:fix": "prettier --write  .",
     "start": "",
-    "lint": "eslint src/**/*.ts",
+    "lint": "eslint .",
     "lint:fix": "eslint --fix /src/**/*.ts",
-    "test": "jest"
+    "test": "jest --watchAll --no-cache"
   },
-  "jest":{
-    "testEnvironment":"node",
-    "preset":"ts-jest"
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "ts-jest"
   },
   "author": "Rishabh Sinha",
   "license": "ISC",
