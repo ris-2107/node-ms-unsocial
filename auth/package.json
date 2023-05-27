@@ -10,7 +10,11 @@
     "start": "",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint --fix src/**/*.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "jest":{
+    "testEnvironment":"node",
+    "preset":"ts-jest"
   },
   "author": "Rishabh Sinha",
   "license": "ISC",
@@ -21,7 +25,9 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.1",
     "@types/node": "^20.2.3",
+    "@types/supertest": "^2.0.12",
     "eslint": "^8.41.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript-prettier": "^5.0.0",
