@@ -45,8 +45,8 @@
   "lint-staged": {
     "src/**/*.ts": [
       "npm run prettier:fix",
-      "git add",
-      "npm run test"
+      "npm run test",
+      "git add"
     ]
   },
   "husky": {
